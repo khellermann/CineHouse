@@ -1,0 +1,1 @@
+var cinema = "CineHouse";
