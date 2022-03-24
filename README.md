@@ -8,3 +8,12 @@
 - [x] touch cinema.js
 - [x] Criar váriavel e atribuir valor 
 
+# PARTE II: CineHouse
+## Executar o comando npm init 👌
+- [x] npm init
+## Imprimir a variavel criada na parte I 👌
+- [x] console.log(cinema);
+## Executar o arquivo 👌
+- [x] node cinema.js
+## Adicionar a biblioteca nodemon como desenvolvimento 👌
+- [x] npm install nodemon -D

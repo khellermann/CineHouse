@@ -1,0 +1,22 @@
+{
+  "name": "cinehouse",
+  "version": "1.0.0",
+  "description": "- [x] node -v \r ## Criar pasta para projeto, chamada CineHouse 👌\r - [x] mkdir CineHouse\r ## Criar arquivo chamado cinema.js, nele criar uma variável chamada cinema e esta deverá receber um valor como nome da loja 👌\r - [x] touch cinema.js\r - [x] Criar váriavel e atribuir valor",
+  "main": "cinema.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khellermann/CineHouse.git"
+  },
+  "author": "Khellermann Machado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khellermann/CineHouse/issues"
+  },
+  "homepage": "https://github.com/khellermann/CineHouse#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
