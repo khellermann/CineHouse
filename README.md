@@ -94,4 +94,12 @@ escolhido, buscar o filme com base no parâmetro recebido e alterar o status
 existente da propriedade emCartaz (se estava como true, alterar para false, e
 vice e versa).
 
-
+```
+function alterarStatusEmCartaz(codigo){
+    for(let i=0; i<catalogo.length; i++){
+        if(codigo == catalogo[i].codigo){
+            return catalogo[i].emCartaz = !catalogo[i].emCartaz;
+        }
+    }
+}
+```
