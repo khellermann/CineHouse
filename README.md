@@ -52,3 +52,46 @@ let catalogo = [{
 ]
 ```
 
+# MODULO II: Parte II - Funções para o CineHouse
+## Criando as funções:
+
+### adicionarFilme
+- [x] A função deve receber os parâmetros com as informações necessárias para
+criar um objeto do tipo Filme.
+Qual método dentre os que falamos hoje pode nos ajudar a adicionar
+informações em uma array?
+push(); ✔️
+
+```
+function adicionarFilme(codigo, titulo, duracao, atores, anoDeLancamento, emCartaz){
+        return catalogo.push({codigo, titulo, duracao, atores, anoDeLancamento, emCartaz})
+}
+
+adicionarFilme(4321, "Branca de Neve", 3, ["Paris Hilton", "Carla Perez"], 2019, true);
+```
+
+### buscarFilme
+- [x] A função deve receber como parâmetro o número identificador do filme e fazer
+busca no array de catálogo e ao fim retornar o objeto encontrado. Preferencialmente, retorne de forma mais amigável ao usuário final (pode utilizar console para não retornar apenas o objeto).
+Qual método dentre os que falamos hoje pode nos ajudar a buscar uma
+informação em uma array?
+indexOf(); ✔️
+
+```
+function buscarFilme(codigo){
+    for(let i=0; i<catalogo.length; i++){
+        if(codigo == catalogo[i].codigo){
+            return catalogo[i];
+        }
+    }
+}
+```
+
+
+### alterarStatusEmCartaz
+- [x] A função deve receber como parâmetro o número identificador do filme
+escolhido, buscar o filme com base no parâmetro recebido e alterar o status
+existente da propriedade emCartaz (se estava como true, alterar para false, e
+vice e versa).
+
+
