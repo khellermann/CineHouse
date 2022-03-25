@@ -86,8 +86,6 @@ function buscarFilme(codigo){
     }
 }
 ```
-
-
 ### alterarStatusEmCartaz
 - [x] A função deve receber como parâmetro o número identificador do filme
 escolhido, buscar o filme com base no parâmetro recebido e alterar o status
@@ -103,3 +101,15 @@ function alterarStatusEmCartaz(codigo){
     }
 }
 ```
+
+# MODULO II: Parte 3 - De objeto literal para JSON
+## 1. Chegou o momento de deixarmos de utilizar o objeto literal integrado ao arquivo principal. Vamos modularizar essa nossa base de informações de filmes. Para isso crie, na pasta raíz do projeto, uma nova pasta chamada database (aqui será alocado qualquer arquivo que nos sirva como base de informações a serem consultadas).
+- [x] mkdir database
+
+## 2. Crie, dentro da pasta, um arquivo chamado catalogo.json
+- [x] cd database
+- [x] touch catalogo.json
+
+## 3. Passe para esse arquivo todos os registros criados por você no arquivo cinema.js. E exclua o objeto catalogo do arquivo citado.
+
+
