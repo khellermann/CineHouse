@@ -111,5 +111,50 @@ function alterarStatusEmCartaz(codigo){
 - [x] touch catalogo.json
 
 ## 3. Passe para esse arquivo todos os registros criados por você no arquivo cinema.js. E exclua o objeto catalogo do arquivo citado.
+- [x] atividade realizada
+
+## 4. Perceba que ainda precisaremos das informações dos filmes para que as funções criadas no arquivo cinema.js funcione. Para isso você deve importar o arquivo JSON e armazená-los em uma variável (vide aula 03. Introdução a Node.js)
+- [x] let catalogo = require('./database/catalogo.json');
+
+## 5. Teste as funções novamente certificando-se de que a migração de arquivo e formato não prejudicou seu funcionamento.
+
+# MODULO 2:  Parte II - Otimizando funções e condicionais
+
+## 1. listarTodosOsFilmes - criar A função deve percorrer toda a lista de filmes armazenada no catálogo utilizando o loop for e retornar as informações de maneira amigável ao usuário. Essa função pode receber parâmetros? Por que?
+
+´´´
+function listarTodosOsFilmes(){
+    catalogo.forEach(function(cat){
+        console.log(cat.titulo);
+    });
+}
+
+listarTodosOsFilmes();
+´´´
+## 2. listarFilmesEmCartaz - criar A função deve percorrer toda a lista de filmes armazenada no catálogo utilizando o loop for e retornar os filmes disponíveis em cartaz - as informações de maneira amigável ao usuário. E esta, recebe parâmetros? Por que?
+
+´´´
+function listarFilmesEmCartaz(){
+    console.log("Filmes em cartaz")
+    catalogo.filter(function(cat){
+        if(cat.emCartaz){
+            console.log(cat.titulo);
+        }
+    });
+}
+listarFilmesEmCartaz();
+´´´
+
+
+# 3. alterarStatusEmCartaz - alterar A função deve receber como parâmetro o número identificador do filme escolhido, buscar o filme com base no parâmetro recebido e alterar o status existente da propriedade emCartaz (se estava como true, alterar para false, e vice e versa;
+
+```
+function alterarStatusEmCartaz(codigo){
+    let filmeStatus = buscarFilme(codigo);
+    filmeStatus.emCartaz = !filmeStatus.emCartaz;
+    return filmeStatus;
+}
+```
+
 
 
