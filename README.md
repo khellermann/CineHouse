@@ -120,7 +120,7 @@ function alterarStatusEmCartaz(codigo){
 
 # MODULO 2:  Parte II - Otimizando funções e condicionais
 
-## 1. listarTodosOsFilmes - criar A função deve percorrer toda a lista de filmes armazenada no catálogo utilizando o loop for e retornar as informações de maneira amigável ao usuário. Essa função pode receber parâmetros? Por que?
+### listarTodosOsFilmes - criar A função deve percorrer toda a lista de filmes armazenada no catálogo utilizando o loop for e retornar as informações de maneira amigável ao usuário. Essa função pode receber parâmetros? Por que?
 
 ´´´
 function listarTodosOsFilmes(){
@@ -131,7 +131,7 @@ function listarTodosOsFilmes(){
 
 listarTodosOsFilmes();
 ´´´
-## 2. listarFilmesEmCartaz - criar A função deve percorrer toda a lista de filmes armazenada no catálogo utilizando o loop for e retornar os filmes disponíveis em cartaz - as informações de maneira amigável ao usuário. E esta, recebe parâmetros? Por que?
+### listarFilmesEmCartaz - criar A função deve percorrer toda a lista de filmes armazenada no catálogo utilizando o loop for e retornar os filmes disponíveis em cartaz - as informações de maneira amigável ao usuário. E esta, recebe parâmetros? Por que?
 
 ´´´
 function listarFilmesEmCartaz(){
@@ -143,10 +143,11 @@ function listarFilmesEmCartaz(){
     });
 }
 listarFilmesEmCartaz();
+
 ´´´
 
 
-# 3. alterarStatusEmCartaz - alterar A função deve receber como parâmetro o número identificador do filme escolhido, buscar o filme com base no parâmetro recebido e alterar o status existente da propriedade emCartaz (se estava como true, alterar para false, e vice e versa;
+### alterarStatusEmCartaz - alterar A função deve receber como parâmetro o número identificador do filme escolhido, buscar o filme com base no parâmetro recebido e alterar o status existente da propriedade emCartaz (se estava como true, alterar para false, e vice e versa;
 
 ```
 function alterarStatusEmCartaz(codigo){
@@ -154,6 +155,7 @@ function alterarStatusEmCartaz(codigo){
     filmeStatus.emCartaz = !filmeStatus.emCartaz;
     return filmeStatus;
 }
+
 ```
 
 
